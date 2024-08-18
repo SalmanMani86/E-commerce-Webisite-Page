@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.header-background {
+  background-color: #c4102b; /* Background color */
+  padding: 10px; /* Adjust padding as needed */
+}
+i.fa-solid.fa-truck,
+i.fas.fa-recycle,
+i.fas.fa-hand-holding-usd,
+i.fa-solid.fa-phone,
+i.fas.fa-search {
+  color: #00a8e8; /* Blue color for the icons */
+  /* Icon size similar to the image */
+}
+.card-img-top.ad {
+  object-fit: cover;
+  height: 100%;
+}
+.card {
+  height: 100%;
+}
+.f12 {
+  font-size: 12px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f21 {
+  font-size: 21px;
+}
+.f22 {
+  font-size: 22px;
+}
+.f23 {
+  font-size: 23px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f25 {
+  font-size: 25px;
+  color: #00aaff;
+}
+.f35 {
+  font-size: 35px;
+}
+.list-inline {
+  display: flex;
+}
+#List li:hover {
+  cursor: pointer;
+  color: #55cbe8;
+}
+.ssl {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+}
+.cart {
+  width: 100%;
+}
+.header-text {
+  color: black;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+/* ,.header-text img:hover */
+.header-text:hover,
+.fa-solid.fa-pencil:hover,
+.col-md-auto.cart:hover {
+  color: #55cbe8;
+}
+#NavWithSearchBar {
+  display: none;
+  max-width: 1320px;
+}
+#smallDevicesNavbar {
+  display: flex;
+}
+.header-logo {
+  width: 100%;
+}
+
+#cardsContainer,
+#bannersRow {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #6b757b;
+  padding: 0;
+}
+
+.navbar-brand {
+  background-color: #00b7d3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-nav .nav-item {
+  margin: 0;
+  height: 100%;
+  flex-grow: 1; /* Allow items to grow and fill the space */
+  display: flex;
+  align-items: stretch;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding: 15px;
+  background-color: #6b757b;
+  border-left: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.navbar-nav .nav-link:first-child {
+  border-left: none;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #00b7d3;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  border-left: 2px solid white !important;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  color: white;
+}
+
+.full-height {
+  height: 170px;
+  width: 100%;
+}
+
+.testimonial-item p {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+  position: relative;
+  padding: 0 20px;
+}
+
+.testimonial-item p::before,
+.testimonial-item p::after {
+  font-size: 40px;
+  color: #ccc;
+  position: absolute;
+}
+.testimonial-item p::before {
+  content: "“";
+  top: -30px;
+  left: -5px;
+}
+.testimonial-item p::after {
+  content: "”";
+  top: -30px;
+  right: -5px;
+  left: auto;
+  z-index: 1;
+}
+.col-md-6.col-lg-3 {
+  width: 319px;
+  padding: 0;
+}
+.col-lg-2.text-end.see-btn {
+  padding: 30px 60px;
+}
+
+a.text-black:hover {
+  text-decoration: underline;
+  text-decoration: underline !important;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top,
+.card-body {
+  transition: opacity 0.3s ease;
+}
+
+.card:not(.no-hover-opacity):hover .card-img-top,
+.card:not(.no-hover-opacity):hover .card-body {
+  opacity: 0;
+}
+
+.view-all {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.search-input {
+  border: 1px solid lightgrey;
+}
+#input:focus {
+  outline: none;
+}
+.card:hover .view-all {
+  opacity: 1;
+}
+
+#List {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+}
+.list-inline-item {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+i {
+  margin-right: 8px;
+}
+
+footer p,
+footer a {
+  font-size: 14px;
+  color: #8b8a96;
+}
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #headerImage {
+    max-width: 350px;
+  }
+}
+@media (min-width: 976px) {
+  #smallDevicesNavbar {
+    display: none;
+  }
+  #NavWithSearchBar {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  #List {
+    display: none;
+  }
+}

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-background text-center">
+      <img id="headerImage" src="images/header_logo.png" alt="header-image" />
+    </header>
+    <div id="List" class="text-center border-bottom py-3 mx-auto px-2">
+      <li class="list-inline-item">
+        <i class="fa-solid fa-truck f22"></i> Free, Next Day Delivery *
+      </li>
+      <li class="list-inline-item">
+        <i class="fas fa-recycle"></i> Free Removal & Recycling of Old Products
+        *
+      </li>
+      <li class="list-inline-item">
+        <i class="fas fa-hand-holding-usd f22"></i> Price Match Guarantee*
+      </li>
+      <li class="list-inline-item">
+        <i class="fa-solid fa-phone f22"></i> 24/7 Australian Customer Support
+      </li>
+      <li class="list-inline-item">
+        <i class="fa-solid fa-phone-volume"></i>
+      </li>
+    </div>
+    <div>
+      <!-- smallDevicesNavbar -->
+      <div
+        id="smallDevicesNavbar"
+        class="justify-content-between p-2 px-3 align-items-center"
+      >
+        <div class="d-flex gap-2">
+          <img src="./images/burger.png" alt="" />
+          <img src="./images/search.png" alt="" />
+        </div>
+        <div>
+          <img class="header-logo" src="./images/services_logo.png" alt="" />
+        </div>
+        <div class="d-flex gap-2">
+          <img src="./images/phone.png" alt="" />
+          <img src="./images/cart.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Medium-Large Devices Navbar -->
+      <div
+        id="NavWithSearchBar"
+        class="mx-auto align-items-center justify-content-evenly px-2 py-2 gap-5"
+      >
+        <!-- Logo Section -->
+        <div>
+          <img
+            src="images/services_logo.PNG"
+            alt="Appliances Online"
+            class="header-logo"
+          />
+        </div>
+        <!-- Search Section -->
+        <div id="SearchSection">
+          <div class="input-group search-input">
+            <input
+              type="text"
+              id="input"
+              class="form-control p-2 border-0"
+              placeholder="Search for a product"
+            />
+            <button class="btn" type="button">
+              <i class="fas fa-search f22"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Location, Account, SSL, and Cart Section -->
+        <!-- Location Section -->
+        <div id="LocationDiv" class="location">
+          <a href="#" class="text-decoration-none"
+            >Click to set your location</a
+          >
+          <i class="fa-solid fa-pencil ms-2 pointer"></i>
+        </div>
+        <!-- Profile Section -->
+        <div class="profile">
+          <a href="#" class="header-text text-decoration-none pointer">
+            <i class="fas fa-user pointer"></i>
+            <span id="ProfileText">My account</span>
+          </a>
+        </div>
+        <!-- SSL Section -->
+        <div class="pointer">
+          <img class="ssl" src="images/ssl.png" alt="SSL Secured" />
+        </div>
+        <!-- Cart Section -->
+        <div class="pointer">
+          <i class="fas fa-shopping-cart"></i>
+          <a href="#" class="header-text text-decoration-none">
+            <span id="ProfileText">Cart</span>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand highlight" href="#"
+            ><span class="menu-icon">≡</span> SHOP ALL PRODUCTS</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Washers & Dryers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fridges & Freezers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ovens & Cooking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dishwashers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Small Appliances</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">TVs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Heating</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="row mb-4">
+          <!-- First Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Fridges & Freezers.jpg"
+                class="card-img-top"
+                alt="Fridges & Freezers"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Fridges & Freezers</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Second Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Laundry Appliances.jpg"
+                class="card-img-top"
+                alt="Laundry Appliances"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Laundry Appliances</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Third Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Small Appliances.jpg"
+                class="card-img-top"
+                alt="Small Appliances"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Small Appliances</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Fourth Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/ovens & Cooking.jpg"
+                class="card-img-top"
+                alt="Ovens & Cooking"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Ovens & Cooking</h5>
+                <div class="view-all">View all</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-9 mb-4 mb-md-0">
+            <div class="row mb-4">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/Dishwashers,Sinks&Taps.jpg"
+                    class="card-img-top"
+                    alt="Dishwashers, Sinks & Taps"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Dishwashers, Sinks & Taps</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/Health, Beauty&Fitness.jpg"
+                    class="card-img-top"
+                    alt="Health, Beauty & Fitness"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Health, Beauty & Fitness</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/beds & Mattress.jpg"
+                    class="card-img-top"
+                    alt="Beds & Mattress"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Beds & Mattress</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/Fridges & Freezers.jpg"
+                    class="card-img-top"
+                    alt="Fridges & Freezers"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fridges & Freezers</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/Fridges & Freezers.jpg"
+                    class="card-img-top"
+                    alt="Fridges & Freezers"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fridges & Freezers</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                  <img
+                    src="images/Fridges & Freezers.jpg"
+                    class="card-img-top"
+                    alt="Fridges & Freezers"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fridges & Freezers</h5>
+                  </div>
+                  <div class="view-all">View all</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card no-hover-opacity">
+              <img
+                src="images/ad.png"
+                class="card-img-top ad"
+                alt="Hot Offers"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- First Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/BBQs.jpg"
+                class="card-img-top"
+                alt="BBQs & Outdoor Living"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">BBQs & Outdoor Living</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Second Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Furniture.jpg"
+                class="card-img-top"
+                alt="Furniture"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Furniture</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Third Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Small Appliances.jpg"
+                class="card-img-top"
+                alt="Small Appliances"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Small Appliances</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+          <!-- Fourth Item -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img
+                src="images/Home office.jpg"
+                class="card-img-top"
+                alt="Home office"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Home office</h5>
+              </div>
+              <div class="view-all">View all</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bannersRow" class="row">
+        <div class="col-md-6 mb-2">
+          <img
+            class="img-fluid full-height"
+            src="images/Banner.png"
+            alt="banner"
+          />
+        </div>
+        <div class="col-md-6">
+          <img
+            class="img-fluid full-height"
+            src="images/Banner.png"
+            alt="banner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+          <p>Free, Next Day Delivery</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-recycle fa-3x text-primary"></i>
+          <p>Free Removal & Recycling of Old Products</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fas fa-headset fa-3x text-primary"></i>
+          <p>24/7 Australian Customer Support</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fas fa-tag fa-3x text-primary"></i>
+          <p>Price Match Guarantee</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <img
+            src="images/Cutomer-pictures.png"
+            class="img-fluid mb-3"
+            alt="Customer Pictures"
+          />
+          <p class="f25">Trusted by 2.5 million customers</p>
+        </div>
+      </div>
+    </div>
+    <div class="container testimonial-container py-5">
+      <div class="row text-center">
+        <div class="col-md-4 testimonial-item">
+          <h2 class="h5 font-weight-bold">Very pleased</h2>
+          <p>
+            Very pleased...I would not hesitate to use Appliances Online again.
+            The online process was easy and my stove and dishwasher were
+            delivered on time and the 2 delivery people were polite and helpful.
+          </p>
+          <div class="author text-muted">Diane, ETHELTON SA</div>
+        </div>
+        <div class="col-md-4 testimonial-item">
+          <h2 class="h5 font-weight-bold">Competitive pricing</h2>
+          <p>
+            Fantastic service as always from AO. Ordered a couple of things and
+            not only was it price competitive but also they were conveniently
+            delivered to your door (I live far) and sometimes even the next day.
+            Still using them and still amazing.
+          </p>
+          <div class="author text-muted">Jel, WARBURTON VIC</div>
+        </div>
+        <div class="col-md-4 testimonial-item">
+          <h2 class="h5 font-weight-bold">Delivery next morning</h2>
+          <p>
+            We were so gobsmacked that we placed an order early in the
+            afternoon, and had delivery the next morning. Great service.
+          </p>
+          <div class="author text-muted">Louise, WINMALEE NSW</div>
+        </div>
+      </div>
+    </div>
+    <div id="cardsContainer" class="container p-4">
+      <div class="row justify-content-center gap-2">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 p-0">
+          <div class="card h-100 border-1 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Clearance</h5>
+              <p class="card-text">Pickup a bargain today!</p>
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-warning text-white font-weight-bold me-2"
+                >
+                  View
+                </button>
+                <i class="fas fa-tags fa-3x text-muted"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 p-0">
+          <div class="card h-100 border-1 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Buying Guides</h5>
+              <p class="card-text">Learn from our appliance experts</p>
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-warning text-white font-weight-bold me-2"
+                >
+                  View
+                </button>
+                <i class="fas fa-book fa-3x text-muted"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 p-0 m-0">
+          <div class="card h-100 border-1 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Promotions</h5>
+              <p class="card-text">Find out about our special offers</p>
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-warning text-white font-weight-bold me-2"
+                >
+                  View
+                </button>
+                <i class="fas fa-bullhorn fa-3x text-muted"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 p-0">
+          <div class="card h-100 border-1 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Testimonials</h5>
+              <p class="card-text">Hear what our customers say about us</p>
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center"
+              >
+                <button
+                  class="btn btn-warning text-white font-weight-bold me-2"
+                >
+                  View
+                </button>
+                <i class="fas fa-comments fa-3x text-muted"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-light py-5">
+      <!-- Trusted Brands Section -->
+      <div class="row align-items-center">
+        <div class="col-lg-10">
+          <h3 class="text-muted">Our trusted brands</h3>
+          <div class="row ms-5">
+            <!-- First Row of Logos -->
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo1.png"
+                alt="Shopee"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo2.png"
+                alt="Kuromi"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3 my-5">
+              <img src="images/logos/logo3.png" alt="KGM" class="img-fluid" />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo4.png"
+                alt="Gemini"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo5.png"
+                alt="Counter Strike"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row ms-5">
+            <!-- Second Row of Logos -->
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo6.png"
+                alt="Envato"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo7.png"
+                alt="Mobile Legends"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo8.png"
+                alt="Pertamina"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo9.png"
+                alt="ShopeeFood"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <img
+                src="images/logos/logo10.png"
+                alt="Spain Logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 text-end see-btn">
+          <a href="#" class="btn btn-outline-secondary"
+            >See All Brands <i class="fas fa-chevron-down"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="my-4" />
+
+      <!-- Footer Links Section -->
+      <div class="container-fluid bg-light py-5">
+        <!-- Footer Links Section -->
+        <div class="row text-left">
+          <!-- Customer Service Section -->
+          <div class="col-md-4 mb-4">
+            <h4 class="text-black">Customer Service</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Delivery & Legendary Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Buying Guides</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Payment Methods</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Product Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Klarna - Buy Now, Pay Later</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Afterpay it</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Zip - Own It Now, Pay Later</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >What is RRP?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Gift Vouchers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Promotions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Clearance Section</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Appliance Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Hot Offers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Refer a Friend & Be Rewarded</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- About Appliances Online Section -->
+          <div class="col-md-4 mb-4">
+            <h4 class="text-black">About Appliances Online</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-black text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Commercial</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Trading Terms</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Return Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-black text-decoration-none"
+                  >Recall Notices</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Our Partners Section -->
+          <div class="col-md-4 mb-4">
+            <h4 class="text-black">Our Partners</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Andoo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Andoo NZ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Harris Farm Markets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Heelix</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Home Clearance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none">ORA</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Rogerseller</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Service Seeking</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >The Wine Collective</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Winning Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Winning Appliances</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Winning Group</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Winning Magazine</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-black text-decoration-none"
+                      >Winning Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="my-4" />
+
+      <!-- Payment and Social Media Icons -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <i
+            class="fa-brands fa-cc-visa me-2"
+            style="font-size: 35px; color: #ffd43b"
+          ></i>
+          <i class="fa-brands fa-apple-pay me-2" style="font-size: 35px"></i>
+          <i
+            class="fa-brands fa-cc-mastercard me-2"
+            style="font-size: 35px; color: #b82d0a"
+          ></i>
+          <i
+            class="fa-brands fa-cc-paypal me-2"
+            style="font-size: 35px; color: #74c0fc"
+          ></i>
+          <i class="fa-brands fa-google-pay me-2" style="font-size: 35px"></i>
+          <i
+            class="fab fa-google-wallet me-2"
+            style="font-size: 35px; color: #b197fc"
+          ></i>
+          <i
+            class="fab fa-cc-stripe me-2"
+            style="font-size: 35px; color: #74c0fc"
+          ></i>
+          <i class="fab fa-amazon-pay me-2" style="font-size: 35px"></i>
+          <i class="fab fa-btc" style="font-size: 35px; color: #ffd43b"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook me-3" style="font-size: 27px"></i>
+          <i class="fa-brands fa-instagram me-3" style="font-size: 27px"></i>
+          <i class="fa-brands fa-tiktok me-3" style="font-size: 27px"></i>
+          <i class="fa-brands fa-youtube" style="font-size: 27px"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscription and Acknowledgment Section -->
+    <div class="container-fluid bg-dark text-light py-5">
+      <div class="row">
+        <div class="col-md-8 mb-4">
+          <h3>Get free content and exclusive deals</h3>
+          <form class="row">
+            <div class="col-sm-4">
+              <label for="name">Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control mb-2" id="name" required />
+            </div>
+            <div class="col-sm-4">
+              <label for="email"
+                >Email <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                id="email"
+                required
+              />
+            </div>
+            <div class="col-sm-2">
+              <label for="postcode"
+                >Postcode<span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" id="postcode" required />
+            </div>
+            <div class="col-sm-2 my-4">
+              <button type="submit" class="btn btn-warning w-100">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h3>Acknowledgement of Country</h3>
+          <p class="f12">
+            In the spirit of reconciliation, Appliances Online acknowledges the
+            Traditional Custodians of country throughout Australia and their
+            connections to land, sea, and community. We pay our respect to their
+            Elders past and present and extend that respect to all Aboriginal
+            and Torres Strait Islander peoples today.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-light py-4 d-flex justify-content-between container d-md-block text-md-center"
+    >
+      <p class="my-2">
+        &copy; 2004 - 2024 AppliancesOnline.com.au | ACN 151 833 546 | ABN 19
+        151 833 546
+      </p>
+      <p class="my-2">
+        Level 2, 20A Danks Street, Redfern NSW 2016 |
+        <a href="#">1300 000 500</a>
+      </p>
+    </footer>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
